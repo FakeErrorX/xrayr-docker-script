@@ -1,39 +1,39 @@
-# 基于docker部署XrayR的一键脚本
+# One-click script to deploy XrayR based on docker
 
-使用方法：
+Instructions：
 ```bash
-curl -L https://raw.githubusercontent.com/tech-fever/xrayr-docker-script/main/xrayr.sh -o xrayr.sh && chmod +x xrayr.sh && ./xrayr.sh
+curl -L https://raw.githubusercontent.com/FakeErrorX/xrayr-docker-script/main/xrayr.sh -o xrayr.sh && chmod +x xrayr.sh && ./xrayr.sh
 ```
 
-目前只在ubuntu 20.04 LTS 上实验过，不保证可用性。
+Currently only tested on ubuntu 20.04 LTS, availability is not guaranteed.
 
-2022年12月17日更新：
-最近xrayr和v2board都有较大更新，本脚本也相应进行了更新。对于在这之前用过脚本想要更新到新版的，请使用
+Updated December 17, 2022：
+Recently, both xrayr and v2board have been updated, and this script has been updated accordingly. For those who have used the script before and want to update to the new version, please use
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/tech-fever/xrayr-docker-script/main/update.sh)
+bash <(curl -sL https://raw.githubusercontent.com/FakeErrorX/xrayr-docker-script/main/update.sh)
 ```
 
 
-# 支持
+# Support
 
-- [x] 仅测试过v2board
-- [x] 支持V2ray ShadowSocks Trojan
-- [x] 支持设置有无证书三种证书申请方式：`dns file http`，其中 `dns` 证书申请仅支持Cloudflare dns
-- [x] 支持查看xrayr配置
+- [x] Only tested with v2board
+- [x] Support V2ray ShadowSocks Trojan
+- [x] Three certificate application methods are supported: `dns file http`, where `dns` certificate application only supports Cloudflare dns
+- [x] Support viewing xrayr configuration
 
-# 使用效果
+# Effect
 
 ```shell
-xrayr Docker安装管理脚本
-    1.  安装xrayr
-    2.  修改xrayr配置
-    3.  启动xrayr
-    4.  停止xrayr
-    5.  重启并更新xrayr（没有更新版本啦！）
-    6.  查看xrayr日志
-    7.  查看xrayr配置
-    8.  卸载xrayr
-    9.  安装bbr
+xrayr Docker installation management script
+    1.  install xrayr
+    2.  Modify xrayr configuration
+    3.  start xrayr
+    4.  stop xrayr
+    5.  Restart and update xrayr (there is no newer version!)
+    6.  View xrayr logs
+    7.  View xrayr configuration
+    8.  uninstall xrayr
+    9.  install bbr
     ————————————————
-    0.  退出脚本
+    0.  exit script
 ```
